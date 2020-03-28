@@ -1,4 +1,4 @@
-package ru.jasintar.services;
+package ru.jasintar.textconverter.services;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package ru.jasintar.models;
+package ru.jasintar.textconverter.models;
 
 import java.util.List;
 
