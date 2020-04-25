@@ -14,7 +14,16 @@ import static ru.jasintar.textconverter.configs.PatternEnvironment.ANY_SYMBOL_OR
  * @authot Julia Savicheva
  */
 public class PatternConfig {
-    public static List<Pattern> buildPatternCollection() {
+
+    private static List<Pattern> patterns;
+
+    public static List<Pattern> getPatterns() {
+        if (patterns == null)
+            patterns = buildPatternCollection();
+        return patterns;
+    }
+
+    private static List<Pattern> buildPatternCollection() {
         List<Pattern> patterns = new ArrayList<>();
         patterns.add(Pattern.builder()
                 .prevSymbol(ANY_SYMBOL_OR_NULL) //any

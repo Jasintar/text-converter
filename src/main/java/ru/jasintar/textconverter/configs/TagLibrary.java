@@ -1,4 +1,4 @@
-package ru.jasintar.textconverter.services.utils;
+package ru.jasintar.textconverter.configs;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,7 +9,16 @@ import java.util.Map;
  * @authot Julia Savicheva
  */
 public class TagLibrary {
+
+    private static Map<String, String> tagMapFinishToStart;
+
     public static Map<String, String> getPairedTags() {
+        if (tagMapFinishToStart == null)
+            tagMapFinishToStart = buildPairedTags();
+        return tagMapFinishToStart;
+    }
+
+    private static Map<String, String> buildPairedTags() {
         Map<String, String> pairedTags = new HashMap<>();
         // ключ - закрывающий тег
         // значение - открывающий тег

@@ -1,8 +1,6 @@
 package ru.jasintar.textconverter.services;
 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 /**
  * Created on 20.03.2020.
@@ -11,21 +9,28 @@ import java.io.IOException;
  */
 public class TextProcessor {
     private String sourceFileName;
-    private String resultFile;
+    private String resultFileName;
 
     private StringProcessor stringProcessor;
 
-    public TextProcessor(String sourceFileName, String resultFile) {
+    public TextProcessor(String sourceFileName, String resultFileName) {
         this.sourceFileName = sourceFileName;
-        this.resultFile = resultFile;
+        this.resultFileName = resultFileName;
+        this.stringProcessor = new StringProcessor();
     }
 
     public void process() {
-        try (FileReader reader = new FileReader(sourceFileName)) {
-            // читаем посимвольно
-            int c;
-            while((c=reader.read())!=-1){
-                System.out.print((char)c);
+        try (BufferedReader bufferedReader = new BufferedReader( new FileReader(sourceFileName))) {
+            try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(resultFileName))) {
+
+                // читаем построчно
+                String currentLine;
+                while ((currentLine = bufferedReader.readLine()) != null) {
+                    System.out.print(currentLine);
+                    String resultLine = stringProcessor.process(currentLine);
+                    bufferedWriter.write(resultLine);
+                }
+
             }
         } catch (FileNotFoundException e) {
             e.printStackTrace();

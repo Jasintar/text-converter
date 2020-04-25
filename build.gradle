@@ -1,11 +1,15 @@
 plugins {
     id 'java'
+    id 'org.springframework.boot' version '2.2.6.RELEASE'
 }
 
 group 'ru.jasintar'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+
+apply plugin: 'java'
+apply plugin: 'io.spring.dependency-management'
 
 repositories {
     mavenCentral()
@@ -16,4 +20,8 @@ dependencies {
     compile group: 'org.projectlombok', name: 'lombok', version: '1.16.10'
     compile 'ch.qos.logback:logback-core:1.2.3'
     compile 'org.slf4j:slf4j-simple:1.7.30'
+    
+    // Spring Boot
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
 }
