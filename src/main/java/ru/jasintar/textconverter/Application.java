@@ -1,8 +1,11 @@
 package ru.jasintar.textconverter;
 
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import ru.jasintar.textconverter.models.Pattern;
+
+import java.util.List;
+
+import static ru.jasintar.textconverter.configs.PatternConfig.buildPatternCollection;
 
 
 /**
@@ -12,10 +15,13 @@ import org.slf4j.LoggerFactory;
  */
 @Slf4j
 public class Application {
-    private static final Logger logger = LoggerFactory.getLogger(Application.class);
 
     public static void main(String[] args) {
-        logger.info("App started");
+        log.info("App starting...");
+
+        List<Pattern> patterns = buildPatternCollection();
+
+        log.info("Patterns: {}", patterns);
     }
 
 }

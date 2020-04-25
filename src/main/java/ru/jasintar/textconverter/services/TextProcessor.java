@@ -13,13 +13,15 @@ public class TextProcessor {
     private String sourceFileName;
     private String resultFile;
 
+    private StringProcessor stringProcessor;
+
     public TextProcessor(String sourceFileName, String resultFile) {
         this.sourceFileName = sourceFileName;
         this.resultFile = resultFile;
     }
 
     public void process() {
-        try(FileReader reader = new FileReader(sourceFileName)) {
+        try (FileReader reader = new FileReader(sourceFileName)) {
             // читаем посимвольно
             int c;
             while((c=reader.read())!=-1){
