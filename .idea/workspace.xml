@@ -3,15 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7ad0c182-76a7-47d2-9980-f48377c8fc68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/Application.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/MarkdownPattern.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/PatternDictionary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/PatternDictionary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/ReplacebleElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/ReplacebleElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/TextProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/TextProcessor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -51,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            <state relative-caret-position="127">
+              <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#461#507#0" />
@@ -68,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/ReplacebleElement.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,19 +86,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Stream.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="934" column="16" selection-start-line="934" selection-start-column="16" selection-end-line="934" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            <state relative-caret-position="116">
+              <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,11 +113,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="49">
-              <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
+            <state relative-caret-position="117">
+              <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="130">
+              <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
             </state>
           </provider>
         </entry>
@@ -164,8 +158,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/MarkdownPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="99">
-              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+            <state relative-caret-position="184">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <marker date="1589067931120" expanded="true" signature="857:1032" ph="..." />
@@ -190,8 +184,9 @@
       <find>tostring</find>
       <find>out.</find>
       <find>tagList</find>
-      <find>**</find>
       <find>beginIndexOfTag</find>
+      <find>deleteCharAt</find>
+      <find>**</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -219,15 +214,15 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/utils/TagListValidator.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/PatternDictionary.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/Application.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/ReplacebleElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/Pattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/TextProcessor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/MarkdownPattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java" />
       </list>
     </option>
   </component>
@@ -476,7 +471,7 @@
       <workItem from="1585393577151" duration="7414000" />
       <workItem from="1587654652874" duration="6152000" />
       <workItem from="1587744040713" duration="15239000" />
-      <workItem from="1588437999725" duration="23187000" />
+      <workItem from="1588437999725" duration="29385000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1584726597513</created>
@@ -513,11 +508,18 @@
       <option name="project" value="LOCAL" />
       <updated>1587850247379</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="alpha-версия">
+      <created>1589126672882</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1589126672882</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65889000" />
+    <option name="totallyTimeSpent" value="72087000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -533,8 +535,8 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.4680851" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.43371522" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4680851" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43371522" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -579,7 +581,8 @@
     <MESSAGE value="change package" />
     <MESSAGE value="добавлена валидация парных тегов" />
     <MESSAGE value="textProcessor" />
-    <option name="LAST_COMMIT_MESSAGE" value="textProcessor" />
+    <MESSAGE value="alpha-версия" />
+    <option name="LAST_COMMIT_MESSAGE" value="alpha-версия" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -596,6 +599,42 @@
           <line>57</line>
           <properties />
           <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java</url>
+          <line>105</line>
+          <properties />
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java</url>
+          <line>82</line>
+          <properties />
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/MarkdownPattern.java</url>
+          <line>27</line>
+          <properties />
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/MarkdownPattern.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java</url>
+          <line>110</line>
+          <properties />
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -640,14 +679,19 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>TagListValidator.validateTagList(tagList)</expression-string>
+        <expression-string>(this.prevSymbol == null || Pattern.matches(this.prevSymbol, _prevSymbol)) &amp;&amp;
+                (this.patternToReplace.equals(_patternToReplace)) &amp;&amp;
+                (this.nextSymbol == null || Pattern.matches(this.nextSymbol, _nextSymbol))</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>(this.prevSymbol == null || Pattern.matches(this.prevSymbol, _prevSymbol)) &amp;&amp;
-                (this.patternToReplace.equals(_patternToReplace)) &amp;&amp;
-                (this.nextSymbol == null || Pattern.matches(this.nextSymbol, _nextSymbol))</expression-string>
+        <expression-string>this.patternToReplace.equals(_patternToReplace)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>TagListValidator.validateTagList(tagList)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -658,11 +702,6 @@
       </expression>
       <expression>
         <expression-string>this.prevSymbol == null || Pattern.matches(this.prevSymbol, _prevSymbol)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>this.patternToReplace.equals(_patternToReplace)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -855,13 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="31" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/utils/TagListValidator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
@@ -913,16 +945,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/io/BufferedWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="107">
@@ -930,31 +952,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="49">
-          <caret line="34" column="54" selection-start-line="34" selection-start-column="54" selection-end-line="34" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/MarkdownPattern.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1589067931120" expanded="true" signature="857:1032" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/ReplacebleElement.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -971,14 +972,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/MarkdownPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1589067931120" expanded="true" signature="857:1032" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="127">
+          <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#461#507#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="21" column="63" selection-start-line="21" selection-start-column="63" selection-end-line="21" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="29" column="41" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
         </state>
       </provider>
     </entry>

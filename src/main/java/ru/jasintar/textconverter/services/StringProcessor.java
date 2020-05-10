@@ -94,9 +94,12 @@ public class StringProcessor {
                                 .length(findedPattern.get().getPatternToReplace().length())
                                 .build());
                         currentTag.setLength(0); // обнуляем буффер текущего тега
+                    } else {
+                        currentTag.setLength(0);
                     }
                 } else {
-                    currentTag.deleteCharAt(currentTag.length() - 1);
+                    currentTag.setLength(0);
+//                    currentTag.deleteCharAt(currentTag.length() - 1);
 //                    prevSymbol = new String(charArray)
                 }
             } else if (i == charArray.length - 1) { // паттерн найден, нужно сверяем с полным паттерном, включая предыдущий и следующий символы
