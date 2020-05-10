@@ -16,45 +16,16 @@ import static ru.jasintar.textconverter.configs.PatternConfig.getMarkdownPattern
 /**
  * Created on 23.04.2020.
  *
- * @authot Julia Savicheva
+ * @author Julia Savicheva
  */
 @Slf4j
 public class StringProcessor {
 
     private List<MarkdownPattern> markdownPatterns = getMarkdownPatterns();
 
-
-//    public static void main(String[] args) {
-//        List<ReplacebleElement> tagList;
-//
-//        Map<String, String> pairedTags = getPairedTags();
-//        tagList = new ArrayList<>();
-//        tagList.add(ReplacebleElement.builder()
-//                .beginIndex(0)
-//                .length(1)
-//                .replaceTo("<i>")
-//                .build());
-//        tagList.add(ReplacebleElement.builder()
-//                .beginIndex(5)
-//                .length(1)
-//                .replaceTo("<i>")
-//                .build());
-//        tagList.add(ReplacebleElement.builder()
-//                .beginIndex(8)
-//                .length(1)
-//                .replaceTo("</i>")
-//                .build());
-//
-//        System.out.println(TagListValidator.validateTagList(tagList));
-//    }
-
     public String process(String initialString) {
         log.info("Start process line: {}", initialString);
-        // список найденных тегов
-        List<ReplacebleElement> tagList = new ArrayList<>();
-
-        // Ищем теги, которые нужно заменить
-        tagList = findTags(initialString);
+        List<ReplacebleElement> tagList = findTags(initialString); // Ищем теги, которые нужно заменить
         tagList = TagListValidator.validateTagList(tagList); // валидируем теги на парность
         return applyReplaceValidTags(initialString, tagList); // выполняем замены
     }
@@ -93,15 +64,9 @@ public class StringProcessor {
                                 .replaceTo(findedPattern.get().getReplaceTo())
                                 .length(findedPattern.get().getPatternToReplace().length())
                                 .build());
-                        currentTag.setLength(0); // обнуляем буффер текущего тега
-                    } else {
-                        currentTag.setLength(0);
                     }
-                } else {
-                    currentTag.setLength(0);
-//                    currentTag.deleteCharAt(currentTag.length() - 1);
-//                    prevSymbol = new String(charArray)
                 }
+                currentTag.setLength(0); // обнуляем буффер текущего тега
             } else if (i == charArray.length - 1) { // паттерн найден, нужно сверяем с полным паттерном, включая предыдущий и следующий символы
                 String prevSymbol = (beginIndexOfTag == 0) ? null : "" + "" + charArray[beginIndexOfTag - 1];
                 String nextSymbol = null;
@@ -116,7 +81,6 @@ public class StringProcessor {
                             .build());
                     currentTag.setLength(0); // обнуляем буффер текущего тега
                 }
-
             }
             i++;
         }

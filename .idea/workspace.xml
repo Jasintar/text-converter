@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7ad0c182-76a7-47d2-9980-f48377c8fc68" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -45,11 +43,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="127">
-              <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
+              <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#461#507#0" />
@@ -122,7 +120,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="130">
@@ -220,9 +218,9 @@
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/TextProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/models/MarkdownPattern.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/PatternEnvironment.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java" />
       </list>
     </option>
   </component>
@@ -471,7 +469,7 @@
       <workItem from="1585393577151" duration="7414000" />
       <workItem from="1587654652874" duration="6152000" />
       <workItem from="1587744040713" duration="15239000" />
-      <workItem from="1588437999725" duration="29385000" />
+      <workItem from="1588437999725" duration="29581000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <created>1584726597513</created>
@@ -515,17 +513,24 @@
       <option name="project" value="LOCAL" />
       <updated>1589126672882</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="beta-версия">
+      <created>1589133127390</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589133127390</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72087000" />
+    <option name="totallyTimeSpent" value="72283000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2624811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2624811" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -535,7 +540,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4680851" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.4680851" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.43371522" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -582,7 +587,8 @@
     <MESSAGE value="добавлена валидация парных тегов" />
     <MESSAGE value="textProcessor" />
     <MESSAGE value="alpha-версия" />
-    <option name="LAST_COMMIT_MESSAGE" value="alpha-версия" />
+    <MESSAGE value="beta-версия" />
+    <option name="LAST_COMMIT_MESSAGE" value="beta-версия" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
@@ -602,7 +608,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java</url>
-          <line>105</line>
+          <line>99</line>
           <properties />
           <option name="timeStamp" value="43" />
         </line-breakpoint>
@@ -632,7 +638,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java</url>
-          <line>110</line>
+          <line>104</line>
           <properties />
           <option name="timeStamp" value="48" />
         </line-breakpoint>
@@ -983,17 +989,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="89" column="52" selection-start-line="89" selection-start-column="52" selection-end-line="89" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#461#507#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/configs/FileConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="116">
@@ -1018,6 +1013,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="10" column="87" selection-start-line="10" selection-start-column="87" selection-end-line="10" selection-end-column="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ru/jasintar/textconverter/services/StringProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="98" column="13" selection-start-line="98" selection-start-column="13" selection-end-line="98" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#461#507#0" />
+          </folding>
         </state>
       </provider>
     </entry>
