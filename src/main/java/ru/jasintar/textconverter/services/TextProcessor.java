@@ -1,5 +1,7 @@
 package ru.jasintar.textconverter.services;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.io.*;
 
 /**
@@ -7,6 +9,7 @@ import java.io.*;
  *
  * @authot Julia Savicheva
  */
+@Slf4j
 public class TextProcessor {
     private String sourceFileName;
     private String resultFileName;
@@ -20,20 +23,19 @@ public class TextProcessor {
     }
 
     public void process() {
+        log.info("Start process file: {}", sourceFileName);
         try (BufferedReader bufferedReader = new BufferedReader( new FileReader(sourceFileName))) {
             try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(resultFileName))) {
-
                 // читаем построчно
                 String currentLine;
                 while ((currentLine = bufferedReader.readLine()) != null) {
-                    System.out.print(currentLine);
                     String resultLine = stringProcessor.process(currentLine);
                     bufferedWriter.write(resultLine);
+                    bufferedWriter.newLine();
                 }
-
             }
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            e.printStackTrace(); //TODO логи ошибок
         } catch (IOException e) {
             e.printStackTrace();
         }

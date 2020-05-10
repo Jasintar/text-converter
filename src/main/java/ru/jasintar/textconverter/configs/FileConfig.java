@@ -3,6 +3,7 @@ package ru.jasintar.textconverter.configs;
 import lombok.AccessLevel;
 import lombok.experimental.FieldDefaults;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -12,8 +13,17 @@ import java.util.List;
  */
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class FileConfig {
-    List<String> sourceFiles;
-    String resultFolder;
+    public static final List<String> sourceFiles = configureSourceFiles();
+    public static final String resultFolder = configureResultFolder();
 
+    private static List<String> configureSourceFiles() {
+        List<String> sources = new ArrayList<>();
+        sources.add("C:\\Chiaroscuro\\chapter 001\\Пролог.md");
+        return sources;
+    }
+
+    private static String configureResultFolder() {
+        return "C:\\Chiaroscuro\\approved\\";
+    }
 
 }

@@ -1,12 +1,11 @@
 package ru.jasintar.textconverter.configs;
 
-import ru.jasintar.textconverter.models.Pattern;
+import ru.jasintar.textconverter.models.MarkdownPattern;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static ru.jasintar.textconverter.configs.PatternEnvironment.ANY_LTTER_OR_NUMBER;
-import static ru.jasintar.textconverter.configs.PatternEnvironment.ANY_SYMBOL_OR_NULL;
+import static ru.jasintar.textconverter.configs.PatternEnvironment.*;
 
 /**
  * Created on 23.04.2020.
@@ -15,78 +14,78 @@ import static ru.jasintar.textconverter.configs.PatternEnvironment.ANY_SYMBOL_OR
  */
 public class PatternConfig {
 
-    private static List<Pattern> patterns;
+    private static List<MarkdownPattern> markdownPatterns;
 
-    public static List<Pattern> getPatterns() {
-        if (patterns == null)
-            patterns = buildPatternCollection();
-        return patterns;
+    public static List<MarkdownPattern> getMarkdownPatterns() {
+        if (markdownPatterns == null)
+            markdownPatterns = buildPatternCollection();
+        return markdownPatterns;
     }
 
-    private static List<Pattern> buildPatternCollection() {
-        List<Pattern> patterns = new ArrayList<>();
-        patterns.add(Pattern.builder()
+    private static List<MarkdownPattern> buildPatternCollection() {
+        List<MarkdownPattern> markdownPatterns = new ArrayList<>();
+        markdownPatterns.add(MarkdownPattern.builder()
                 .prevSymbol(ANY_SYMBOL_OR_NULL) //any
                 .patternToReplace("__")
                 .nextSymbol(ANY_LTTER_OR_NUMBER) // 1 любая буква русская или английская или цифра
                 .replaceTo("<b>")
                 .build());
 
-        patterns.add(Pattern.builder()
-                .prevSymbol("[A-Za-zА-яа-яЁё0-9]") // 1 любая буква русская или английская или цифра
+        markdownPatterns.add(MarkdownPattern.builder()
+                .prevSymbol(ANY_SYMBOL_OR_NULL) // any
                 .patternToReplace("**")
-                .nextSymbol(ANY_SYMBOL_OR_NULL) // any
-                .replaceTo("</b>")
+                .nextSymbol(ANY_LTTER_OR_NUMBER) // 1 любая буква русская или английская или цифра
+                .replaceTo("<b>")
                 .build());
 
-        patterns.add(Pattern.builder()
+        markdownPatterns.add(MarkdownPattern.builder()
                 .prevSymbol(ANY_SYMBOL_OR_NULL) //any
                 .patternToReplace("__")
                 .nextSymbol(ANY_LTTER_OR_NUMBER) // 1 любая буква русская или английская или цифра
                 .replaceTo("<b>")
                 .build());
 
-        patterns.add(Pattern.builder()
-                .prevSymbol("[A-Za-zА-яа-яЁё0-9]") // 1 любая буква русская или английская или цифра
+        markdownPatterns.add(MarkdownPattern.builder()
+                .prevSymbol(ANY_LTTER_OR_NUMBER_OR_MARK) // 1 любая буква русская или английская или цифра или конец предложения
                 .patternToReplace("**")
                 .nextSymbol(ANY_SYMBOL_OR_NULL) // any
                 .replaceTo("</b>")
                 .build());
 
-        patterns.add(Pattern.builder()
+        markdownPatterns.add(MarkdownPattern.builder()
                 .prevSymbol(ANY_SYMBOL_OR_NULL) //any
                 .patternToReplace("_")
                 .nextSymbol(ANY_LTTER_OR_NUMBER) // 1 любая буква русская или английская или цифра
                 .replaceTo("<i>")
                 .build());
 
-        patterns.add(Pattern.builder()
-                .prevSymbol("[A-Za-zА-яа-яЁё0-9]") // 1 любая буква русская или английская или цифра
+        markdownPatterns.add(MarkdownPattern.builder()
+                .prevSymbol(ANY_LTTER_OR_NUMBER_OR_MARK) // 1 любая буква русская или английская или цифра или конец предложения
                 .patternToReplace("_")
                 .nextSymbol(ANY_SYMBOL_OR_NULL) // any
                 .replaceTo("</i>")
                 .build());
 
-        patterns.add(Pattern.builder()
+        markdownPatterns.add(MarkdownPattern.builder()
                 .prevSymbol(ANY_SYMBOL_OR_NULL) //any
                 .patternToReplace("*")
                 .nextSymbol(ANY_LTTER_OR_NUMBER) // 1 любая буква русская или английская или цифра
                 .replaceTo("<i>")
                 .build());
 
-        patterns.add(Pattern.builder()
-                .prevSymbol("[A-Za-zА-яа-яЁё0-9]") // 1 любая буква русская или английская или цифра
+        markdownPatterns.add(MarkdownPattern.builder()
+                .prevSymbol(ANY_LTTER_OR_NUMBER_OR_MARK) // 1 любая буква русская или английская или цифра или конец предложения
                 .patternToReplace("*")
                 .nextSymbol(ANY_SYMBOL_OR_NULL) // any
                 .replaceTo("</i>")
                 .build());
 
-        patterns.add(Pattern.builder()
-                .prevSymbol(null)
+        markdownPatterns.add(MarkdownPattern.builder()
+                .prevSymbol(ANY_SYMBOL_OR_NULL)
                 .patternToReplace("---")
-                .nextSymbol(null)
+                .nextSymbol(ANY_SYMBOL_OR_NULL)
                 .replaceTo("<center>***</center>")
                 .build());
-        return patterns;
+        return markdownPatterns;
     }
 }

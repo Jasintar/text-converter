@@ -8,13 +8,13 @@ import java.util.List;
  * @authot Julia Savicheva
  */
 public class PatternDictionary {
-    private List<Pattern> patterns;
+    private List<MarkdownPattern> markdownPatterns;
     private String patternSymbols;
 
-    public PatternDictionary(List<Pattern> patterns) {
-        this.patterns = patterns;
-        patternSymbols = this.patterns.stream()
-                .map(Pattern::getPatternToReplace)
+    public PatternDictionary(List<MarkdownPattern> markdownPatterns) {
+        this.markdownPatterns = markdownPatterns;
+        patternSymbols = this.markdownPatterns.stream()
+                .map(MarkdownPattern::getPatternToReplace)
                 .reduce("", (s1, s2) -> s1 + s2);
     }
 
