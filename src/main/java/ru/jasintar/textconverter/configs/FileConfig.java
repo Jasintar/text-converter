@@ -18,7 +18,6 @@ public class FileConfig {
 
     private static List<String> configureSourceFiles() {
         List<String> sources = new ArrayList<>();
-        sources.add("C:\\Chiaroscuro\\chapter 001\\test.md");
         sources.add("C:\\Chiaroscuro\\chapter 001\\Пролог.md");
         return sources;
     }
